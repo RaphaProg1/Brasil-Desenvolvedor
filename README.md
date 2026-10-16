@@ -71,64 +71,7 @@ brasil-desenvolvedor/
 - `cloudflare/schema.sql`: estrutura inicial do banco de dados.
 - `cloudflare/wrangler.toml`: configuração de desenvolvimento e implantação com Wrangler.
 
-## 🚀 Executando localmente
-
-### 1. Obtenha o código
-
-Clone o repositório:
-
-```bash
-git clone URL_DO_REPOSITORIO
-cd brasil-desenvolvedor
-```
-
-Substitua `URL_DO_REPOSITORIO` pelo endereço real do repositório no GitHub.
-
-### 2. Configure o website
-
-Entre na pasta `site/` e abra o arquivo `config.js`.
-
-Configure a URL da API e a chave pública do Cloudflare Turnstile conforme o ambiente utilizado.
-
-**Atenção:** a chave pública do Turnstile pode ser utilizada no frontend. A chave secreta deve permanecer somente no ambiente seguro do backend.
-
-### 3. Configure a API
-
-A API utiliza Cloudflare Workers e Cloudflare D1.
-
-Antes de publicar, confira:
-
-- Se o binding `DB` aponta para o banco de dados correto.
-- Se as variáveis e os segredos exigidos pelo código estão configurados.
-- Se as URLs permitidas para acesso à API correspondem ao domínio do website.
-- Se a estrutura do banco de dados corresponde à versão atual da API.
-
-O arquivo `cloudflare/schema.sql` contém o esquema inicial do banco. Verifique se ele corresponde à versão do código que será implantada antes de executá-lo.
-
-### 4. Publique o projeto
-
-O website pode ser publicado no Cloudflare Pages, enquanto a API pode ser implantada no Cloudflare Workers.
-
-Consulte a documentação oficial:
-
-- [Cloudflare Pages](https://developers.cloudflare.com/pages/)
-- [Cloudflare Workers](https://developers.cloudflare.com/workers/)
-- [Cloudflare D1](https://developers.cloudflare.com/d1/)
-- [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/)
-
-## 🔐 Segurança e privacidade
-
-O projeto utiliza mecanismos para reduzir envios automatizados e armazenar as informações necessárias ao funcionamento do formulário.
-
-Alguns cuidados importantes:
-
-- Nunca publique chaves secretas, tokens ou credenciais no repositório.
-- Não inclua arquivos `.env` com informações privadas.
-- Restrinja o acesso ao banco de dados e aos recursos administrativos.
-- Revise as regras de segurança e o tratamento dos dados antes de disponibilizar o formulário publicamente.
-- Informe aos visitantes quais dados são coletados, para qual finalidade e por quanto tempo são mantidos.
-
-A validação por CAPTCHA reduz determinados tipos de abuso, mas não comprova a identidade de quem envia o formulário. As manifestações registradas não devem ser interpretadas automaticamente como assinaturas oficiais ou como prova de apoio de pessoas únicas.
+## 🚀 Executando localmente (Em Breve)
 
 ## 🤝 Contribuições
 
@@ -141,14 +84,12 @@ Para contribuir:
 3. Faça as modificações e teste o funcionamento.
 4. Envie um pull request descrevendo o que foi alterado.
 
-## 📜 Licença
+📜 Licença
 
-A licença deste projeto deve ser definida pelo responsável pelo repositório.
+O código-fonte deste projeto é disponibilizado sob a licença MIT, permitindo seu uso, cópia, modificação, distribuição e utilização comercial, desde que os avisos de direitos autorais e a licença sejam preservados.
 
-Até que uma licença seja adicionada, não presuma que o código pode ser redistribuído ou utilizado sem restrições.
+A licença do código não se estende automaticamente à proposta legislativa, aos documentos, à identidade visual ou às marcas do projeto.
 
----
-
-Desenvolvido de forma independente com o objetivo de incentivar o debate sobre o futuro da tecnologia no Brasil.
+Consulte o arquivo ""LICENSE"" (./LICENSE) para conhecer os termos completos da licença aplicável ao código.
 
 **Brasil Desenvolvedor — tecnologia, participação e iniciativa.**
