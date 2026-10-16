@@ -84,7 +84,7 @@ Para contribuir:
 3. Faça as modificações e teste o funcionamento.
 4. Envie um pull request descrevendo o que foi alterado.
 
-📜 Licença
+## 📜 Licença
 
 O código-fonte deste projeto é disponibilizado sob a licença MIT, permitindo seu uso, cópia, modificação, distribuição e utilização comercial, desde que os avisos de direitos autorais e a licença sejam preservados.
 
